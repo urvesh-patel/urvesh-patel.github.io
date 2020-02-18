@@ -5276,7 +5276,7 @@ h2.title {
 .underlined {
     text-decoration: none;
     flex: 1;
-    background-image: linear-gradient(to right, yellow 0, yellow 100%);
+    background-image: linear-gradient(to right, rgb(255, 203, 61), rgb(255, 203, 61) 100%);
     background-size: 0 100%;
     background-repeat: no-repeat;
     transition: background 1s;
