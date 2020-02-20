@@ -6104,3 +6104,12 @@ Heavily modified for personal use.
     padding: 0;
     overflow: hidden;
 }
+
+
+
+
+hr { 
+    width:95%;
+    height:1px;
+    background: rgb(158, 158, 158) 
+}
