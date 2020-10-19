@@ -1958,7 +1958,8 @@ output {
 }
 
 .label {
-    border-radius: 2px;
+    border-radius: .5px;
+    color: rgb(34, 34, 34);
 }
 
 .label,
@@ -5139,10 +5140,10 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 .title2 {
     margin-top: 15px;
     margin-bottom: 15px;
-    font-weight: 500;
+    font-weight: 600;
     color: #fff;
     line-height: 1.4em;
-    font-size: 3.8em;
+    font-size: 2.3em;
 }
 
 .title3 {
@@ -5200,6 +5201,7 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
     line-height: 1.6em;
     color: #fff;
 }
+
 
 .red {
     font-size: 0.8em;
@@ -5295,6 +5297,11 @@ h2.title {
     position: relative;
 }
 
+
+/*!
+Customized Header Black Filter Banner Opacity
+*/
+
 .header-filter:after {
     position: absolute;
     z-index: 1;
@@ -5305,6 +5312,7 @@ h2.title {
     top: 0;
     content: "";
     background-color: rgba(0, 0, 0, 0.4);
+    opacity: 100%;
 }
 
 .wire .container > div {
@@ -5422,10 +5430,13 @@ h2.title {
     margin-bottom: 110px;
 }
 
+
+/* Customized: Banner Height Change */
+
 .index-page .brand2 {
-    margin-top: 28%;
+    margin-top: 2%;
     text-align: center;
-    margin-bottom: 28%;
+    margin-bottom: 33%;
 }
 
 .index-page .brand h1 {
@@ -6113,3 +6124,61 @@ hr {
     height:1px;
     background: rgb(158, 158, 158) 
 }
+
+
+
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+
+
+
+
+
+.label2 {
+  color: black;
+  border-radius: 10px;
+  padding: 6px;
+  font-family: Arial;
+}
+.success {background-color: #dadada;} /* Green */
+.info {background-color: #2196F3;} /* Blue */
+.warning {background-color: #ff9800;} /* Orange */
+.danger {background-color: #f44336;} /* Red */ 
+.other {background-color: #e7e7e7; color: black;} /* Gray */ 
